@@ -33,116 +33,79 @@ function Type() {
             loaded={particlesLoaded}
             options={{
               background: {
-                color: "#212121",
+                color: "#000000",
               },
-              detectRetina: false,
-              fpsLimit: 60,
               interactivity: {
-                detectsOn: "canvas",
                 events: {
+                  onClick: {
+                    enable: true,
+                    mode: "push",
+                  },
                   onHover: {
                     enable: true,
-                    mode: "bubble",
+                    mode: "repulse",
                   },
                   resize: true,
                 },
                 modes: {
                   bubble: {
-                    distance: 40,
+                    distance: 400,
                     duration: 2,
-                    opacity: 8,
-                    size: 6,
-                    speed: 3,
+                    opacity: 0.8,
+                    size: 40,
+                  },
+                  push: {
+                    quantity: 4,
+                  },
+                  repulse: {
+                    distance: 200,
+                    duration: 0.4,
                   },
                 },
               },
               particles: {
                 color: {
-                  value: "#ff0000",
-                  animation: {
-                    enable: true,
-                    speed: 20,
-                    sync: true,
-                  },
+                  value: "#00EF43",
                 },
-                lineLinked: {
-                  blink: false,
-                  color: "random",
-                  consent: false,
-                  distance: 30,
+                links: {
+                  color: "#00EF43",
+                  distance: 150,
                   enable: true,
-                  opacity: 0.3,
-                  width: 0.5,
+                  opacity: 0.5,
+                  width: 1,
                 },
+              
                 move: {
-                  attract: {
-                    enable: false,
-                    rotate: {
-                      x: 600,
-                      y: 1200,
-                    },
-                  },
-                  bounce: false,
                   direction: "none",
                   enable: true,
                   outMode: "bounce",
-                  random: true,
-                  speed: 0.5,
+                  random: false,
+                  speed: 6,
                   straight: false,
                 },
                 number: {
                   density: {
-                    enable: false,
-                    area: 2000,
+                    enable: true,
+                    value_area: 800,
                   },
-                  limit: 0,
-                  value: 200,
+                  value: 80,
                 },
                 opacity: {
-                  animation: {
-                    enable: true,
-                    minimumValue: 0.05,
-                    speed: 2,
-                    sync: false,
-                  },
-                  random: false,
-                  value: 1,
+                  value: 0.5,
                 },
                 shape: {
                   type: "circle",
                 },
                 size: {
-                  animation: {
-                    enable: false,
-                    minimumValue: 0.1,
-                    speed: 40,
-                    sync: false,
-                  },
                   random: true,
-                  value: 1,
+                  value: 5,
                 },
-              },
-              polygon: {
-                enable: true,
-                draw: {
-                  enable: true,
-                  lineColor: "rgba(255,255,255,0.2)",
-                  lineWidth: 0.3,
-                },
-                move: {
-                  radius: 10,
-                },
-                inlineArrangement: "equidistant",
-                scale: 0.5,
-                type: "inline",
-                url: "https://particles.js.org/images/smalldeer.svg",
-              },
-            }}
+              }}}
           />
           <div
             style={{
               position: "absolute",
-              fontSize: "2rem",
+              fontSize: "1rem",
               fontFamily: "Chewy",
             }}
           >
@@ -152,26 +115,26 @@ function Type() {
                   .typeString(
                     '<span style="color: #fafafa;font-family: "Rubik Moonrocks";" >...</span>'
                   )
-                  .pauseFor(3000)
+                  .pauseFor(2000)
                   .deleteChars(3)
                   .typeString(
                     '<span style="color: #fafafa;font-family: "Anton";">Hello Ms Reza zade</span>'
                   )
-                  .pauseFor(1000)
+                  .pauseFor(500)
                   .typeString(
                     '<span style="color: #fafafa; font-family: "Anton";"> Oh Sorry -_-</span>'
                   )
-                  .pauseFor(1000)
+                  .pauseFor(500)
                   .deleteChars(18)
                   .pauseFor(500)
                   .typeString(
                     '<span style="color: #fafafa;font-family: "Anton";">zade</span>'
                   )
-                  .pauseFor(1000)
+                  .pauseFor(500)
                   .typeString(
                     '<span style="color: #fafafa;font-family: "Anton";"> :) </span>'
                   )
-                  .pauseFor(48500)
+                  .pauseFor(36500)
                   .deleteAll()
                   .start();
               }}
@@ -182,7 +145,7 @@ function Type() {
           <div
             style={{
               position: "absolute",
-              fontSize: "2rem",
+              fontSize: "1rem",
               marginTop: "3rem",
               fontFamily: "Chewy",
             }}
@@ -190,11 +153,11 @@ function Type() {
             <Typewriter
               onInit={(type) => {
                 type
-                  .pauseFor(20000)
+                  .pauseFor(14000)
                   .typeString(
                     '<span style="color: #fafafa;"> How You doing ?! </span>'
                   )
-                  .pauseFor(43500)
+                  .pauseFor(35500)
                   .deleteAll()
                   .start();
               }}
@@ -204,7 +167,7 @@ function Type() {
           <div
             style={{
               position: "absolute",
-              fontSize: "2rem",
+              fontSize: "1rem",
               marginTop: "6rem",
               fontFamily: "Chewy",
             }}
@@ -212,11 +175,11 @@ function Type() {
             <Typewriter
               onInit={(type) => {
                 type
-                  .pauseFor(25000)
+                  .pauseFor(18000)
                   .typeString(
                     '<span style="color: #fafafa;"> (: SUPERSIZE :) </span>'
                   )
-                  .pauseFor(39000)
+                  .pauseFor(32000)
                   .deleteAll()
                   .start();
               }}
@@ -226,7 +189,7 @@ function Type() {
           <div
             style={{
               position: "absolute",
-              fontSize: "2rem",
+              fontSize: "1rem",
               marginTop: "9rem",
               fontFamily: "Chewy",
             }}
@@ -234,11 +197,11 @@ function Type() {
             <Typewriter
               onInit={(type) => {
                 type
-                  .pauseFor(31000)
+                  .pauseFor(21000)
                   .typeString(
                     '<span style="color: #fafafa;"> You are the best girl i ever seen </span>'
                   )
-                  .pauseFor(29500)
+                  .pauseFor(25500)
                   .deleteAll()
                   .start();
               }}
@@ -248,7 +211,7 @@ function Type() {
           <div
             style={{
               position: "absolute",
-              fontSize: "2rem",
+              fontSize: "1rem",
               marginTop: "12rem",
               fontFamily: "Chewy",
             }}
@@ -256,7 +219,7 @@ function Type() {
             <Typewriter
               onInit={(type) => {
                 type
-                  .pauseFor(38000)
+                  .pauseFor(27500)
                   .typeString(
                     '<span style="color: #fafafa;"> You are gorgeous , eyeful  and your eyes is marveles and I can not take my eyes off it :] </span>'
                   )
@@ -278,19 +241,19 @@ function Type() {
             <Typewriter
               onInit={(type) => {
                 type
-                  .pauseFor(76000)
+                  .pauseFor(59000)
                   .typeString(
                     '<span style="color: #fafafa;"> I LOVE YOU :) </span>'
                   )
                   .start();
               }}
-              options={{ loop: false, autoStart: false }}
+              options={{ loop: false, autoStart: false ,delay:250 }}
             ></Typewriter>
           </div>
           <div
             style={{
               position: "absolute",
-              fontSize: "2rem",
+              fontSize: "1rem",
               marginTop: "21rem",
               fontFamily: "Chewy",
             }}
@@ -298,11 +261,11 @@ function Type() {
             <Typewriter
               onInit={(type) => {
                 type
-                  .pauseFor(54000)
+                  .pauseFor(41000)
                   .typeString(
                     '<span style="color: #fafafa;"> I wana say the three amazing word here </span>'
                   )
-                  .pauseFor(6000)
+                  .pauseFor(5500)
                   .deleteAll()
                   .start();
               }}
@@ -312,7 +275,7 @@ function Type() {
           <div
             style={{
               position: "absolute",
-              fontSize: "2rem",
+              fontSize: "1rem",
               marginTop: "27rem",
               fontFamily: "Chewy",
             }}
@@ -320,7 +283,7 @@ function Type() {
             <Typewriter
               onInit={(type) => {
                 type
-                  .pauseFor(62000)
+                  .pauseFor(47500)
                   .typeString(
                     '<span style="color: #fafafa;">Are you ready?</span>'
                   )
@@ -335,7 +298,7 @@ function Type() {
           <div
             style={{
               position: "absolute",
-              fontSize: "2rem",
+              fontSize: "1rem",
               marginTop: "30rem",
               fontFamily: "Chewy",
             }}
@@ -343,7 +306,7 @@ function Type() {
             <Typewriter
               onInit={(type) => {
                 type
-                  .pauseFor(65000)
+                  .pauseFor(50000)
                   .typeString(
                     '<span style="color: #fafafa;">:) :) :) :) :)</span>'
                   )
