@@ -105,7 +105,7 @@ function Type() {
           <div
             style={{
               position: "absolute",
-              fontSize: "1rem",
+              fontSize: "1.5rem",
               fontFamily: "Chewy",
             }}
           >
@@ -145,7 +145,7 @@ function Type() {
           <div
             style={{
               position: "absolute",
-              fontSize: "1rem",
+              fontSize: "1.5rem",
               marginTop: "3rem",
               fontFamily: "Chewy",
             }}
@@ -167,7 +167,7 @@ function Type() {
           <div
             style={{
               position: "absolute",
-              fontSize: "1rem",
+              fontSize: "1.5rem",
               marginTop: "6rem",
               fontFamily: "Chewy",
             }}
@@ -189,7 +189,7 @@ function Type() {
           <div
             style={{
               position: "absolute",
-              fontSize: "1rem",
+              fontSize: "1.5rem",
               marginTop: "9rem",
               fontFamily: "Chewy",
             }}
@@ -211,7 +211,7 @@ function Type() {
           <div
             style={{
               position: "absolute",
-              fontSize: "1rem",
+              fontSize: "1.5rem",
               marginTop: "12rem",
               fontFamily: "Chewy",
             }}
@@ -253,7 +253,7 @@ function Type() {
           <div
             style={{
               position: "absolute",
-              fontSize: "1rem",
+              fontSize: "1.5rem",
               marginTop: "21rem",
               fontFamily: "Chewy",
             }}
@@ -275,7 +275,7 @@ function Type() {
           <div
             style={{
               position: "absolute",
-              fontSize: "1rem",
+              fontSize: "1.5rem",
               marginTop: "27rem",
               fontFamily: "Chewy",
             }}
@@ -298,7 +298,7 @@ function Type() {
           <div
             style={{
               position: "absolute",
-              fontSize: "1rem",
+              fontSize: "1.5rem",
               marginTop: "30rem",
               fontFamily: "Chewy",
             }}
