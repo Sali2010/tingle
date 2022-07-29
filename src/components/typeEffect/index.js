@@ -134,7 +134,7 @@ function Type() {
                   .typeString(
                     '<span style="color: #fafafa;font-family: "Anton";"> :) </span>'
                   )
-                  .pauseFor(36500)
+                  .pauseFor(37500)
                   .deleteAll()
                   .start();
               }}
@@ -241,9 +241,9 @@ function Type() {
             <Typewriter
               onInit={(type) => {
                 type
-                  .pauseFor(59000)
+                  .pauseFor(61000)
                   .typeString(
-                    '<span style="color: #fafafa;"> I LOVE YOU :) </span>'
+                    '<span style="color: #fafafa;"> I LOVE YOU NAZANIN :) </span>'
                   )
                   .start();
               }}
